@@ -47,7 +47,7 @@ export default function Deck({ setDecks }) {
             <h5 className="card-title">{deck.name}</h5>
             <p className="card-text">{deck.description}</p>
             <div className="d-flex">
-              <Link to={`/decks/${deck.id}/edit`} className="btn btn-primary mr-2">
+              <Link to={`/decks/${deck.id}/edit`} className="btn btn-secondary mr-2">
                 <i className="oi oi-pencil"></i> Edit
               </Link>
               <Link to={`/decks/${deck.id}/study`} className="btn btn-primary mr-2">

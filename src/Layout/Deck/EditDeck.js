@@ -17,7 +17,7 @@ export default function EditDeck() {
         const response = await readDeck(deckId)
         setDeck(response)
         setFormData({
-          id: `${response.id}`,
+          id: response.id,
           name: `${response.name}`,
           description: `${response.description}`,
         })
