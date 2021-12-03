@@ -22,8 +22,8 @@ export default function EditDeck() {
         setDeck(deckResponse)
         setFormData({
           id: cardResponse.id,
-          front: `${cardResponse.front}`,
-          back: `${cardResponse.back}`,
+          front: cardResponse.front,
+          back: cardResponse.back,
           deckId: deckResponse.id,
         })
       } catch (error) {

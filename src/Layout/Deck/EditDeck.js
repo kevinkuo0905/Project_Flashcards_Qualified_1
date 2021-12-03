@@ -18,8 +18,8 @@ export default function EditDeck() {
         setDeck(response)
         setFormData({
           id: response.id,
-          name: `${response.name}`,
-          description: `${response.description}`,
+          name: response.name,
+          description: response.description,
         })
       } catch (error) {
         throw error
